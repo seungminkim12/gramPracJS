@@ -15,7 +15,8 @@ function showThisName() {
 // console.log(showThisName.call(mike)); //함수를 사용하면서 call을 사용하고 this로 사용할 객체를 넘기면 주어진 객체의 메소드 인것처럼 사용 가능
 
 function update(birth, job) {
-  (this.birth = birth), (this.job = job);
+  this.birth = birth;
+  this.job = job;
 }
 
 update.call(mike, 1994, "singer");

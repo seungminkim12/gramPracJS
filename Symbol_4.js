@@ -9,8 +9,8 @@ const obj = {
 const a = Symbol();
 const b = Symbol();
 
-// console.log(a === b);
-// console.log(a == b);
+// console.log(a === b); //false
+// console.log(a == b);  //false
 
 //설명 붙여주기 가능
 const id = Symbol("id");
@@ -37,10 +37,11 @@ console.log(user[id]);
 const id2 = Symbol.for("id1");
 const id3 = Symbol.for("id1");
 
-console.log(id2 === id3);
-console.log(Symbol.keyFor(id2));
+console.log(id2 === id3); //true
+console.log(Symbol.keyFor(id2)); //'id1'
 //전역Symbol이 아니면 keyFor 사용 불가
-console.log(id.description);
+
+console.log(id.description); //id
 
 //숨겨진Symbol보는법
 console.log(Object.getOwnPropertySymbols(user));

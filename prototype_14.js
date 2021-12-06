@@ -1,4 +1,4 @@
-//객체의 메소드가 property에 있으면 끝, 없으면 prototype에서 찾음
+//객체의 메소드, 값이 property에 있으면 끝, 없으면 prototype에서 찾음
 //prototype chain
 const car = {
   wheels: 4,

@@ -8,7 +8,7 @@ const user = {
 console.log(user);
 
 //methods
-//Object.assing() 객체 복제
+//Object.assign() 객체 복제
 const user1 = {
   name: "Mike",
   age: 30,
@@ -22,9 +22,9 @@ const maledUser = Object.assign({ male: "man" }, user1);
 
 newUser.name = "Tom";
 
-console.log(user1.name);
-console.log(newUser.name);
-console.log(maledUser);
+console.log(`user1.name ${user1.name}`);
+console.log(`newUser.name ${newUser.name}`);
+console.log(`maledUser ${maledUser}`);
 
 //Object.keys() 키배열 반환
 const keys = Object.keys(maledUser);
