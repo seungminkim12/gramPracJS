@@ -1,6 +1,8 @@
 function isAdult(user) {
+  //age가 없으면 둘다 false
   if (!("age" in user) || user.age < 20) {
     console.log(`!('age' in user) ${!("age" in user)}`);
+    console.log(user.age < 20);
     return false;
   }
   return true;
