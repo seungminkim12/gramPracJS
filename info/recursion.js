@@ -119,4 +119,38 @@ function reverseLoopList(list){
 }
 
 // reversePrintList(list);
-reverseLoopList(list)
+// reverseLoopList(list)
+
+/**
+ * linkedList prev,next
+ */
+
+
+ let evolList = {    
+    value: 1,
+    next: {      
+      value: 2,
+      next: {        
+        value: 3,
+        next: {          
+          value: 4,
+          next: null
+        }
+      }
+    }
+  };
+  let temp = null;
+  function addPrev(list){    
+    if(temp){
+        list.prev = temp;
+    }else{
+        list.prev = null;
+    }
+    if(list.next){
+        temp = list.next;
+        addPrev(temp)
+    }    
+  }
+
+  addPrev(evolList)
+  console.log(evolList.next.next.next.prev)
