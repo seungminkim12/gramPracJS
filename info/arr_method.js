@@ -148,3 +148,22 @@ usersMapped = [
 */
 console.log( usersMapped[0].id ) // 1
 console.log( usersMapped[0].fullName ) // John Smith
+
+// 프로퍼티 age가 있는 객체가 담긴 배열이 있습니다. 이 배열을 age를 기준으로 정렬해주는 함수 sortByAge(users)를 만들어보세요.
+
+let john3 = { name: "John", age: 25 };
+let pete3 = { name: "Pete", age: 30 };
+let mary3 = { name: "Mary", age: 28 };
+
+let arr4 = [ pete3, john3, mary3 ];
+
+function sortByAge(arr){
+    arr.sort((a,b) => parseInt(a.age) - parseInt(b.age))
+}
+
+sortByAge(arr4);
+
+// now: [john, mary, pete]
+console.log(arr4[0].name); // John
+console.log(arr4[1].name); // Mary
+console.log(arr4[2].name); // Pete
