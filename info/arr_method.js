@@ -167,3 +167,43 @@ sortByAge(arr4);
 console.log(arr4[0].name); // John
 console.log(arr4[1].name); // Mary
 console.log(arr4[2].name); // Pete
+
+// 배열의 요소를 무작위로 섞어주는 함수 shuffle(array)을 작성해 보세요.
+
+let arr5 = [1, 2, 3];
+
+function shuffle(value){
+
+}
+
+shuffle(arr);
+// arr = [3, 2, 1]
+
+shuffle(arr);
+// arr = [2, 1, 3]
+
+shuffle(arr);
+// arr = [3, 1, 2]
+// ...
+
+
+// age를 나타내는 프로퍼티를 가진 객체가 여러 개 담긴 배열이 있습니다. 평균 나이를 반환해주는 함수 getAverageAge(users)를 작성해보세요.
+// 평균을 구하는 공식은 (age1 + age2 + ... + ageN) / N 입니다.
+
+let john6 = { name: "John", age: 25 };
+let pete6 = { name: "Pete", age: 30 };
+let mary6 = { name: "Mary", age: 29 };
+
+let arr6 = [ john6, pete6, mary6 ];
+
+function getAverageAge(value){
+    let av = null;
+    value.map((vl) => av += vl.age)
+    return av/value.length
+}
+
+// function getAverageAge(users) {
+//     return users.reduce((prev, user) => prev + user.age, 0) / users.length;
+//   }
+
+console.log( getAverageAge(arr6) ); // (25 + 30 + 29) / 3 = 28
