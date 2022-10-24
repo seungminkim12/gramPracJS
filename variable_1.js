@@ -18,6 +18,7 @@ console.log(name); //사용가능
 let age = 30;
 function showAge() {
   console.log(age);
+  
   // let age = 20; //reference Error
 }
 showAge();
