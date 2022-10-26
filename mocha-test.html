@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<<<<<<< HEAD
   <!-- 결과 출력에 사용되는 mocha css를 불러옵니다. -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
   <!-- Mocha 프레임워크 코드를 불러옵니다. -->
@@ -12,6 +13,20 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
   <script>
     // chai의 다양한 기능 중, assert를 전역에 선언합니다.
+=======
+  <!-- add mocha css, to show results -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+  <!-- add mocha framework code -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+  <script>
+    // enable bdd-style testing
+    mocha.setup('bdd');
+  </script>
+  <!-- add chai -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+  <script>
+    // chai has a lot of stuff, let's make assert global
+>>>>>>> d118425b597c7485cfbeddf98a0d68da254cae7f
     let assert = chai.assert;
   </script>
 </head>
@@ -20,6 +35,7 @@
 
   <script>
     function pow(x, n) {
+<<<<<<< HEAD
       /* 코드를 여기에 작성합니다. 지금은 빈칸으로 남겨두었습니다. */
     }
   </script>
@@ -31,6 +47,26 @@
   <div id="mocha"></div>
 
   <!-- 테스트를 실행합니다! -->
+=======
+      /* function code is to be written, empty now */
+        let result = 1;
+
+        for (let i = 0; i < n; i++) {
+            result *= x;
+        }
+
+        return result;
+    }
+  </script>
+
+  <!-- the script with tests (describe, it...) -->
+  <script src="mocha-test.js"></script>
+
+  <!-- the element with id="mocha" will contain test results -->
+  <div id="mocha"></div>
+
+  <!-- run tests! -->
+>>>>>>> d118425b597c7485cfbeddf98a0d68da254cae7f
   <script>
     mocha.run();
   </script>
