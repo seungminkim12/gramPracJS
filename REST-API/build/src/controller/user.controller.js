@@ -13,13 +13,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.createdUserHandler = void 0;
-const user_service_1 = require("src/service/user.service");
+const user_service_1 = require("../service/user.service");
 const logger_1 = __importDefault(require("../utils/logger"));
 function createdUserHandler(req, res) {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             const user = yield (0, user_service_1.createUser)(req.body); //call create user service
-            return user;
+            return res.send(user);
         }
         catch (e) {
             logger_1.default.error(e);
