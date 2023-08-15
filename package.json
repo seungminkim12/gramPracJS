@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "eslint": "^8.27.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.0"
   }
 }

@@ -1,17 +1,3 @@
-// let data = {
-//     name: "restaurant",
-//     category: "western",
-//     address: {
-//       city: "seoul",
-//       detail: "bongchen",
-//       zipCode: 17643,
-//     },
-//     menu: [
-//       { name: "tomato pasta", price: 2000, category: "pasta" },
-//       { name: "garlic steak", price: 3000, category: "steak" },
-//     ],
-//   };
-
 export type Restaurant = {
   name: string;
   category: string;
