@@ -5,11 +5,19 @@
 
 .swiper-container {
   display: flex;
+  width: 100%;
+  height: 85px;
+  margin-left: -32px;
   position: relative;
+}
+
+.swiper-wrapper {
+  display: flex;
   gap: 33px;
   width: 100%;
   height: 85px;
   overflow-x: scroll;
+  /* margin-left: 32px; */
 }
 
 .swiper-item {
@@ -25,6 +33,16 @@ img {
 }
 
 .next-icon {
+  display: flex;
   position: absolute;
+
   left: 350px;
+}
+
+.prev-icon {
+  display: flex;
+  position: absolute;
+  /* left: 10px; */
+  left: 32px;
+  z-index: 999;
 }
