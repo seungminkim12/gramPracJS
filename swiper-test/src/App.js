@@ -67,7 +67,6 @@ function App() {
 
   useEffect(() => {
     const { current } = ref;
-    console.log("current", current.scrollLeft);
     if (current) {
       current.addEventListener("scroll", () => handleScroll(ref));
     }
